@@ -26,6 +26,13 @@ namespace NotUsed.Config
             
             // If you want this resource group to contain the js proxies to call your webservice, call AddWebApiProxy()
             AddWebApiProxy();
+
+            Dependencies.Add("Tridion.Web.UI.Editors.CME");
+            Dependencies.Add("Tridion.Web.UI.Editors.CME.commands");
+
+            // Let's add our resources to the WhereUsedPlusGroup.aspx page.  This will inject
+            // the resources without us having to manually edit it.
+            AttachToView("NotUsed.aspx");
         }
     }
 }

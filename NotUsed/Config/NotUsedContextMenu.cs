@@ -19,7 +19,7 @@ namespace NotUsed.Config
             Name = "NotUsedMenu";
 
             // Where to add the new menu in the current context menu.
-            InsertBefore = "cm_sep_7";
+            InsertBefore = Constants.ContextMenuIds.MainContextMenu.Separator7;
             
             // Generate all of the context menu items...
             AddItem("cm_notused", "Not Used...", "NotUsed");
